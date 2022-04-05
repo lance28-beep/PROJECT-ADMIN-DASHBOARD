@@ -29,7 +29,7 @@
 @media only screen and (min-width: 768px) {
   .container {
     grid-template-columns: 100px 1fr;
-    grid-template-rows: 150px 1fr 50px;
+    grid-template-rows: 100px 1fr 50px;
     grid-template-areas:
       'nav header'
       'main main'
@@ -37,19 +37,35 @@
   }
 
   .nav {
-    height: 150px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
+    position: relative;
     a {
       text-align: center;
     }
     .nav__toggle {
-      margin-bottom: 3rem;
-      font-size: 3rem;
-      margin-left: 2rem;
+      position: absolute;
+      bottom: 15px;
+      font-size: 1.5rem;
     }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    grid-template-columns: 300px calc(100vw - 300px);
+    grid-template-areas:
+      'nav header'
+      'nav main'
+      'nav footer';
+  }
+
+  .nav {
+    height: 100vh;
   }
 }

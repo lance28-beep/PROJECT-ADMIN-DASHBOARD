@@ -77,6 +77,7 @@
       width: 30%;
       left: -100%;
       bottom: 0;
+      z-index: 1;
       .nav__list {
         grid-template-columns: 1fr;
         .nav__link {
@@ -100,5 +101,32 @@
   }
   .nav__close {
     top: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    .nav__logo {
+      font-size: 2rem;
+    }
+    .nav__menu {
+      position: relative;
+      left: 0;
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      border-radius: none;
+      .nav__item {
+        transform: scale(1.2);
+        margin-left: 1.5rem;
+      }
+    }
   }
 }
