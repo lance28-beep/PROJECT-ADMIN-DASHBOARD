@@ -1,0 +1,21 @@
+footer {
+  height: 100%;
+  background-color: $dark-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  p {
+    margin-right: 10px;
+    font-size: smaller;
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 100;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

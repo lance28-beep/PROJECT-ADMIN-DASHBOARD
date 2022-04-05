@@ -1,0 +1,32 @@
+.announcement {
+  display: grid;
+  background-color: rgba(245, 249, 252, 0.493);
+  padding: 1rem;
+  border-radius: 20px;
+  gap: 0.5rem;
+  h1 {
+    color: $dark-green;
+    font-size: 1.5rem;
+  }
+  .announcement-content {
+    border: 1px solid $dark-green;
+    background-color: $light-green;
+    padding: 12px;
+    .announcement-content-item:first-child {
+      margin-top: 0;
+    }
+    .announcement-content-item {
+      margin-top: 1rem;
+      border-bottom: 1px solid $white;
+      h2 {
+        font-size: medium;
+        color: $white;
+      }
+      p {
+        color: $white;
+        font-size: small;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

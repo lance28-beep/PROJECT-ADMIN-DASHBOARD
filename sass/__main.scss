@@ -1,0 +1,13 @@
+@import '_main-blogs';
+@import '_main-announcement';
+@import '_main-trending';
+
+main {
+  background-image: url('../../assets/img/800px-WTNaga_HMMM_B42.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
